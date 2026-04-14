@@ -42,6 +42,12 @@ main {
     background-color: #AAAAAA;
 }
 
+main h1 {
+    color: #10659C;
+    font-size: 200%;
+    text-align: center;
+}
+
 footer {
     clear: both;
     text-align: center;
@@ -76,4 +82,22 @@ footer a:hover {
     padding: 1rem;
     margin: 1rem;
     border-radius: 1rem;
+}
+
+.content-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.content-row img {
+    width: 20rem;
+    height: 100%;
+    padding: 2rem;
+}
+
+.content-row p {
+    margin: 1rem;
+    text-align: left;
+    font-size: 150%;
 }
