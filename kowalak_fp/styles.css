@@ -158,3 +158,21 @@ footer a:hover {
     font-size: 175%;
     line-height: 1.6;
 }
+
+/* TERMS AND CONDITIONS CONTENT
+==========================================================*/
+.terms-conditions-content p {
+    margin: 1rem;
+    padding: 1rem;
+    font-size: 150%;
+}
+
+.terms-conditions-content h2 {
+    margin: 1rem;
+    padding: 1rem;
+    font-size: 200%;
+    font-weight: bold;
+    background-color: #EAEAEA;
+    border-radius: 1rem;
+}
+
