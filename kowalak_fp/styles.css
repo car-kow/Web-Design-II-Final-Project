@@ -4,6 +4,8 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/* HEADER AND NAVIGATION BAR
+==========================================================*/
 header {
     background-color: white;
     display: flex;
@@ -37,17 +39,26 @@ nav a:hover {
     color: #10659C;
 }
 
+/* MAIN STYLING FOR ALL PAGES
+==========================================================*/
 main {
     padding: 1rem;
     background-color: #AAAAAA;
 }
 
 main h1 {
-    color: #10659C;
-    font-size: 200%;
+    color: white;
+    background-color: #10659C;
+    font-size: 250%;
     text-align: center;
+    font-style: italic;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 1rem;
 }
 
+/* FOOTER
+==========================================================*/
 footer {
     clear: both;
     text-align: center;
@@ -59,16 +70,16 @@ footer {
 footer ul {
     list-style-type: none;
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     margin: 1rem;
     padding: 1rem;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 
 footer a {
     padding: 1rem;
     text-transform: uppercase;
-    display: block;
     color: #AAAAAA;
     text-decoration: none;
 }
@@ -77,6 +88,8 @@ footer a:hover {
     color: #EAEAEA;
 }
 
+/* HOMEPAGE CONTENT
+==========================================================*/
 .page-content {
     background-color: white;
     padding: 1rem;
@@ -93,11 +106,35 @@ footer a:hover {
 .content-row img {
     width: 20rem;
     height: 100%;
-    padding: 2rem;
+    padding: .5rem;
+    margin: 1rem;
+    background-color: #EAEAEA;
+    border-radius: 1rem;
+    box-shadow: 5px 8px 8px rgba(0, 0, 0, 0.350);
 }
 
 .content-row p {
     margin: 1rem;
     text-align: left;
-    font-size: 150%;
+    font-size: 200%;
+}
+
+.img-gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width: 100%;
+}
+
+.img-gallery img {
+    width: 20rem;
+    height: 100%;
+    padding: .5rem;
+    margin: 1rem;
+    background-color: #EAEAEA;
+    border-radius: 1rem;
+    box-shadow: 5px 8px 8px rgba(0, 0, 0, 0.350);
 }
