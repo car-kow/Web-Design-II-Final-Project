@@ -25,6 +25,7 @@ nav ul {
     flex-wrap: wrap;
     margin: 1rem;
     padding: 1rem;
+    font-size: 125%;
 }
 
 nav a {
@@ -75,6 +76,7 @@ footer ul {
     margin: 1rem;
     padding: 1rem;
     justify-content: space-evenly;
+    font-size: 110%;
 }
 
 footer a {
