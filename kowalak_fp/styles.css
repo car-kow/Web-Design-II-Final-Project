@@ -124,6 +124,10 @@ footer a:hover {
     color: #EAEAEA;
 }
 
+ion-icon {
+    font-size: 40px
+}
+
 /* HOMEPAGE CONTENT
 ==========================================================*/
 .page-content {
@@ -143,7 +147,8 @@ footer a:hover {
 
 .content-row img {
     width: 20rem;
-    height: auto;
+    height: 20rem;
+    object-fit: cover;
     padding: .5rem;
     margin: 1rem;
     background-color: #EAEAEA;
@@ -194,7 +199,8 @@ footer a:hover {
 
 .img-gallery img {
     width: 20rem;
-    height: 100%;
+    height: 20rem;
+    object-fit: cover;
     padding: .5rem;
     margin: 1rem;
     background-color: #EAEAEA;
@@ -221,6 +227,7 @@ footer a:hover {
     margin: 1rem;
     padding: 1rem;
     font-size: 150%;
+    line-height: 1.5;
 }
 
 .terms-conditions-content h2 {
@@ -230,4 +237,173 @@ footer a:hover {
     font-weight: bold;
     background-color: #EAEAEA;
     border-radius: 1rem;
+}
+
+/* ABOUT US CONTENT
+==========================================================*/
+.img-gallery-about {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width: 100%;
+}
+
+.img-gallery-about figcaption {
+    text-align: center;
+    font-size: 120%;
+    font-weight: bold;
+    color: #333333;
+}
+
+.img-gallery-about img {
+    width: 20rem;
+    height: 30rem;
+    object-fit: cover;
+    padding: .5rem;
+    margin: 1rem;
+    background-color: #EAEAEA;
+    border-radius: 1rem;
+    box-shadow: 5px 8px 8px rgba(0, 0, 0, 0.350);
+    transition: transform .75s ease-in-out;
+}
+
+.img-gallery-about img:hover {
+    transform: scale(1.03);
+}
+
+/* RESPONSIVE DESIGN - TABLET DISPLAYS
+==========================================================*/
+@media (max-width: 768px) {
+   header img {
+        padding: 4rem;
+    }
+
+    nav ul {
+        font-size: 115%;
+    }
+
+    .content-row p {
+        font-size: 140%;
+        line-height: 1.3;
+    }
+
+    .content-row img {
+        width: 15rem;
+        height: 15rem;
+    }
+
+    .img-gallery img {
+        width: 15rem;
+        height: 15rem;
+    }
+
+    .img-gallery-about img {
+        width: 18rem;
+        height: 25rem;
+    }
+
+    .terms-conditions-content p {
+        font-size: 140%;
+        line-height: 1.4;
+    }
+
+    .content-row li {
+        font-size: 140%;
+        line-height: 1.4;
+    }
+
+    .content-row .services-img {
+        display: none;
+    }
+
+    footer ul {
+        display: flex;
+        flex-direction: column;
+        font-size: 115%;
+    }
+
+    footer li {
+        padding: 1rem;
+    }
+
+    ion-icon {
+        font-size: 40px;
+    }
+}
+
+/* RESPONSIVE DESIGN - PHONE DISPLAYS
+==========================================================*/
+@media (max-width: 480px) {
+    header img {
+        padding: .5rem;
+        width: 14rem;
+        height: 14rem;
+        object-fit: contain;
+    }
+
+    nav ul {
+        font-size: 115%;
+    }
+
+    main h1 {
+        font-size: 175%;
+    }
+
+    main h2 {
+        font-size: 125%;
+    }
+
+    .content-row p {
+        font-size: 130%;
+        line-height: 1.3;
+    }
+
+    .content-row img {
+        display: none;
+    }
+
+    .img-gallery img {
+        width: 15rem;
+        height: 15rem;
+    }
+
+    .img-gallery-about img {
+        width: 15rem;
+        height: 20rem;
+    }
+
+    .terms-conditions-content p {
+        font-size: 120%;
+        line-height: 1.3;
+    }
+
+    .terms-conditions-content h2 {
+        font-size: 125%;
+    }
+
+    .content-row li {
+        font-size: 130%;
+        line-height: 1.3;
+    }
+
+    .content-row .services-img {
+        display: none;
+    }
+
+    footer ul {
+        display: flex;
+        flex-direction: column;
+        font-size: 100%;
+    }
+
+    footer li {
+        padding: 1rem;
+    }
+
+    ion-icon {
+        font-size: 40px;
+    }
 }
